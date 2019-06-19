@@ -34,7 +34,7 @@ public class FindAllTadPole {
     public static void main(String[] args) {
         List<Tadpole> tadpoles = new ArrayList<Tadpole>();
         for (Amphibian amphibian : tadpoles) {
-            __________ tadpole = amphibian;
+//            __________ tadpole = amphibian;
         }
     }
 }

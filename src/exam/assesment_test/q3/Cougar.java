@@ -22,26 +22,37 @@ F. The code will not compile because of line 11.
 G. The output cannot be determined from the code provided.
 */
 
+
+
 interface HasTail {
     int getTailLength();
 }
+//UNCOMMENT
+//abstract class Puma implements HasTail {
+//    protected int getTailLength() {
+//        return 4;
+//    }
+//}
+//
+//public class Cougar extends Puma {
+//    public static void main(String[] args) {
+//        Puma puma = new Puma();
+//        System.out.println(puma.getTailLength());
+//    }
+//
+//    public int getTailLength(int length) {
+//        return 2;
+//    }
+//}
 
-abstract class Puma implements HasTail {
-    protected int getTailLength() {
-        return 4;
-    }
-}
 
-public class Cougar extends Puma {
-    public static void main(String[] args) {
-        Puma puma = new Puma();
-        System.out.println(puma.getTailLength());
-    }
 
-    public int getTailLength(int length) {
-        return 2;
-    }
-}
+
+
+
+
+
+
 /*
 C, D, E. First, the method getTailLength() in the interface HasTail is assumed to be
 public, since it is part of an interface. The implementation of the method on line 3 is

@@ -1,0 +1,131 @@
+1) A, B, E. Option A is valid because you can use the dollar sign in identifiers. Option B is
+valid because you can use an underscore in identifiers. Option C is not a valid identifier
+because true is a Java reserved word. Option D is not valid because the dot (.) is not
+allowed in identifiers. Option E is valid because Java is case sensitive, so Public is not
+a reserved word and therefore a valid identifier. Option F is not valid because the first
+character is not a letter, $, or _.
+--------------------------------
+2) D. Boolean fields initialize to false and references initialize to null, so empty is false
+and brand is null. Brand = null is output.
+--------------------------------
+3.) B, D, E. Option A (line 4) compiles because short is an integral type. Option B (line
+5) generates a compiler error because int is an integral type, but 5.6 is a floating-point
+type. Option C (line 6) compiles because it is assigned a String. Options D and E (lines
+7 and 8) do not compile because short and int are primitives. Primitives do not allow
+methods to be called on them. Option F (line 9) compiles because length() is defined
+on String.
+--------------------------------
+4. A, B. Adding the variable at line 2 makes result an instance variable. Since instance
+variables are in scope for the entire life of the object, option A is correct. Option B is
+correct because adding the variable at line 4 makes result a local variable with a scope
+of the whole method. Adding the variable at line 6 makes result a local variable with
+a scope of lines 6–7. Since it is out of scope on line 8, the println does not compile and
+option C is incorrect. Adding the variable at line 9 makes result a local variable with
+a scope of lines 9 and 10. Since line 8 is before the declaration, it does not compile and
+option D is incorrect. Finally, option E is incorrect because the code can be made to
+compile.
+--------------------------------
+5. C, D. Option C is correct because it imports Jelly by classname. Option D is correct
+because it imports all the classes in the jellies package, which includes Jelly.
+Option A is incorrect because it only imports classes in the aquarium package—Tank
+in this case—and not those in lower-level packages. Option B is incorrect because you
+cannot use wildcards anyplace other than the end of an import statement. Option E is
+incorrect because you cannot import parts of a class with a regular import statement.
+Option F is incorrect because options C and D do make the code compile.
+--------------------------------
+6. E. The first two imports can be removed because java.lang is automatically imported.
+The second two imports can be removed because Tank and Water are in the same package,
+making the correct answer E. If Tank and Water were in different packages, one of
+these two imports could be removed. In that case, the answer would be option D.
+--------------------------------
+7. A, B, C. Option A is correct because it imports all the classes in the aquarium package
+including aquarium.Water. Options B and C are correct because they import Water by
+classname. Since importing by classname takes precedence over wildcards, these compile.
+Option D is incorrect because Java doesn’t know which of the two wildcard Water
+Chapter 1: Java Building Blocks 335
+classes to use. Option E is incorrect because you cannot specify the same classname in
+two imports.
+--------------------------------
+8. B. Option B is correct because arrays start counting from zero and strings with spaces
+must be in quotes. Option A is incorrect because it outputs Blue. C is incorrect because
+it outputs Jay. Option D is incorrect because it outputs Sparrow. Options E and F are
+incorrect because they output Error: Could not find or load main class Bird-
+Display.class.
+--------------------------------
+9. A, C, D, E. Option A is correct because it is the traditional main() method signature
+and variables may begin with underscores. Options C and D are correct because the
+array operator may appear after the variable name. Option E is correct because
+varargs are allowed in place of an array. Option B is incorrect because variables are
+not allowed to begin with a digit. Option F is incorrect because the argument must be
+an array or varargs. Option F is a perfectly good method. However, it is not one that
+can be run from the command line because it has the wrong parameter type.
+--------------------------------
+10. E. Option E is the canonical main() method signature. You need to memorize it.
+Option A is incorrect because the main() method must be public. Options B and F
+are incorrect because the main() method must have a void return type. Option C is
+incorrect because the main() method must be static. Option D is incorrect because the
+main() method must be named main.
+--------------------------------
+11. C, D. Option C is correct because all non-primitive values default to null. Option D is
+correct because float and double primitives default to 0.0. Options B and E are incorrect
+because int primitives default to 0.
+--------------------------------
+12. G. Option G is correct because local variables do not get assigned default values. The
+code fails to compile if a local variable is not explicitly initialized. If this question
+were about instance variables, options D and F would be correct. A boolean primitive
+defaults to false and a float primitive defaults to 0.0.
+--------------------------------
+13. A, D. Options A and D are correct because boolean primitives default to false and
+int primitives default to 0.
+--------------------------------
+14. D. The package name represents any folders underneath the current path, which is
+named.A in this case. Option B is incorrect because package names are case sensitive,
+just like variable names and other identifiers.
+--------------------------------
+15. A, E. Underscores are allowed as long as they are directly between two other digits.
+This means options A and E are correct. Options B and C are incorrect because the
+underscore is adjacent to the decimal point. Option D is incorrect because the underscore
+is the last character.
+--------------------------------
+16. B, C, D. 0b is the prefix for a binary value and is correct. 0x is the prefix for a hexadecimal
+value. This value can be assigned to many primitive types, including int and
+double, making options C and D correct. Option A is incorrect because 9L is a long
+value. long amount = 9L would be allowed. Option E is incorrect because the underscore
+is immediately before the decimal. Option F is incorrect because the underscore is
+the very last character.
+--------------------------------
+17. A, E. Bunny is a class, which can be seen from the declaration: public class Bunny. bun
+is a reference to an object. main() is a method.
+--------------------------------
+18. C, D, E. package and import are both optional. If both are present, the order must
+be package, then import, then class. Option A is incorrect because class is before
+package and import. Option B is incorrect because import is before package. Option
+F is incorrect because class is before package. Option G is incorrect because class is
+before import.
+--------------------------------
+19. B, D. The Rabbit object from line 3 has two references to it: one and three. The references
+are nulled out on lines 6 and 8, respectively. Option B is correct because this
+makes the object eligible for garbage collection after line 8. Line 7 sets the reference
+four to the now null one, which means it has no effect on garbage collection. The Rabbit
+object from line 4 only has a single reference to it: two. Option D is correct because
+this single reference becomes null on line 9. The Rabbit object declared on line 10
+becomes eligible for garbage collection at the end of the method on line 12. Calling
+System.gc() has no effect on eligibility for garbage collection.
+--------------------------------
+20. B, E. Calling System.gc() suggests that Java might wish to run the garbage collector.
+Java is free to ignore the request, making option E correct. finalize() runs if an object
+attempts to be garbage collected, making option B correct.
+--------------------------------
+21. A. While the code on line 3 does compile, it is not a constructor because it has a return
+type. It is a method that happens to have the same name as the class. When the code
+runs, the default constructor is called and count has the default value (0) for an int.
+--------------------------------
+22. B, E. C++ has operator overloading and pointers. Java made a point of not having
+either. Java does have references to objects, but these are pointing to an object that can
+move around in memory. Option B is correct because Java is platform independent.
+Option E is correct because Java is object oriented. While it does support some parts of
+functional programming, these occur within a class.
+--------------------------------
+23. C, D. Java puts source code in .java files and bytecode in .class files. It does not use
+a .bytecode file. When running a Java program, you pass just the name of the class
+without the .class extension.
