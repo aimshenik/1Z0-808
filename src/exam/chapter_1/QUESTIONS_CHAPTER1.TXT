@@ -207,7 +207,6 @@ D. package named.A;
 E. package a;
 F. package A;
 G. Does not compile.
-Review Questions 47
 ---------------------------------
 15. Which of the following lines of code compile? (Choose all that apply)
 ---------------------------------
